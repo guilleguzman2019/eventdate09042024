@@ -1,0 +1,78 @@
+.content{
+
+    min-height: 300px;
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v505-tang-17-abstractbackground_2.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=80&usm=15&vib=3&w=1300&s=eefb4846f83051fbd609d10797b8d1cc%22%20alt=%22abstract%20background%20image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3% 5% 3% 5%;
+ }
+ 
+ .tituloSeccion{
+    font-size: 3em;
+    line-height: 2.7;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 500;
+ }
+ 
+ @media screen and (max-width: 767px) {
+ 
+    .tituloSeccion{
+ 
+       font-size: 27px;
+    }
+ 
+ }
+ 
+ .frases{
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ .tag-button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+ }
+ 
+ .tag-button.active {
+    background-color: #555;
+    color: white;
+ }
+ 
+ .contenidoOwl{
+ 
+    padding: 1% 3% 1% 3%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+ }
+ 
+ .carusel{
+ 
+    width: 420px;
+ 
+ }
+ 
+ @media screen and (max-width: 767px) {
+ 
+    .carusel{
+ 
+       width: 300px;
+    }
+ 
+ }
+ 
+ .owl-prev {
+     left: -36px !important;
+ }
+ 
+ .owl-next {
+     right: -36px !important;
+ }
+
+ .modalCreateInvitacion{
+
+   background: linear-gradient(90deg, #161718, #c487d1);
+ }

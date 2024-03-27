@@ -1,0 +1,432 @@
+/* css del component portada */ 
+
+.titulo_portada{
+  text-align:center;
+  color:white;
+  font-size:88px;
+  font-family:"Noto Serif Display";
+  font-weight:600;
+  font-style:italic;
+}
+.image{
+  position:absolute;
+}
+.top-right{
+  top:0px;
+  right:0px;
+}
+.bottom-left{
+  bottom:0px;
+  left:0px;
+}
+#portada-Western{
+  background-image:url("http://localhost/invitacion-autenticacion/archivos/western.png");
+  background-size:cover;
+  background-position-x:50%;
+  background-position-y:50%;
+  background-repeat:no-repeat;
+  height:100vh;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  box-shadow:rgba(7, 7, 7, 0.3) 0px 0px 0px 2000px inset;
+}
+.image.bottom-left{
+  width:99px;
+}
+.image.top-right{
+  width:131px;
+}
+.texto_portada{
+  text-align:center;
+  font-size:25px;
+  letter-spacing:6px;
+  color:rgb(241, 241, 241);
+}
+@media (max-width: 480px){
+  .image.bottom-left{
+    width:75px;
+    height:270px;
+  }
+  .image.top-right{
+    width:109px;
+    height:269px;
+  }
+  .titulo_portada{
+    font-size:37px;
+  }
+}
+
+/* css del component historia */ 
+
+#historia-Western{
+  background-color:rgb(51, 51, 51);
+  transition-behavior:normal, normal, normal, normal;
+  transition-duration:0.3s, 0.3s, 0.3s, 0.3s;
+  transition-timing-function:ease, ease, ease, ease;
+  transition-delay:0s, 0s, 0s, 0s;
+  transition-property:background, border, border-radius, box-shadow;
+  padding-top:4%;
+  padding-right:4%;
+  padding-bottom:7%;
+  padding-left:4%;
+}
+.tituloHistoria{
+  color:rgb(255, 255, 255);
+  font-family:"Noto Serif Display", sans-serif;
+  font-size:40px;
+  font-weight:400;
+  font-style:italic;
+  margin-bottom:35px;
+}
+.textoHistoria{
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-family:Montserrat, sans-serif;
+  font-size:15px;
+  font-weight:300;
+  font-style:normal;
+  line-height:28px;
+}
+@media only screen and (max-width: 768px){
+  .tituloHistoria{
+    font-size:28px;
+  }
+}
+
+/* css del component hashtag */
+
+
+#hashtag-Western{
+  background-color:white;
+  padding-top:4%;
+  padding-right:4%;
+  padding-bottom:4%;
+  padding-left:4%;
+}
+.titulohashtag{
+  color:rgb(0, 0, 0);
+  font-family:"Noto Serif Display", sans-serif;
+  font-size:35px;
+  font-weight:700;
+  font-style:italic;
+}
+.hashtag{
+  margin-bottom:40px;
+  color:rgb(215, 183, 162);
+  font-family:Montserrat, sans-serif;
+  font-size:25px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:5px;
+  text-align:center;
+}
+.botonhashtag{
+  font-family:Montserrat, sans-serif;
+  font-size:11px;
+  font-weight:600;
+  color:black;
+  background-color:rgb(231, 216, 203);
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  padding-top:15px;
+  padding-right:40px;
+  padding-bottom:12px;
+  padding-left:40px;
+  border-top-color:white;
+  border-right-color:white;
+  border-bottom-color:white;
+  border-left-color:white;
+  text-decoration-line:none;
+  text-decoration-thickness:initial;
+  text-decoration-style:initial;
+  text-decoration-color:initial;
+}
+@media only screen and (max-width: 768px){
+  .titulohashtag{
+    font-size:25px;
+  }
+  .hashtag{
+    margin-bottom:20px;
+    font-size:16px;
+  }
+}
+
+/* css del component vestimenta */ 
+
+#vestimenta-Western{
+  background-color:rgb(51, 51, 51);
+  padding-top:4%;
+  padding-right:4%;
+  padding-bottom:4%;
+  padding-left:4%;
+}
+.tituloVestimenta{
+  color:white;
+  font-family:"Noto Serif Display", sans-serif;
+  font-size:35px;
+  font-weight:700;
+  font-style:italic;
+}
+.vestimenta{
+  margin-bottom:40px;
+  color:rgb(215, 183, 162);
+  font-family:Montserrat, sans-serif;
+  font-size:25px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:5px;
+  text-align:center;
+}
+.botonhashtag{
+  font-family:Montserrat, sans-serif;
+  font-size:11px;
+  font-weight:600;
+  color:black;
+  background-color:rgb(231, 216, 203);
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  padding-top:15px;
+  padding-right:40px;
+  padding-bottom:12px;
+  padding-left:40px;
+  border-top-color:white;
+  border-right-color:white;
+  border-bottom-color:white;
+  border-left-color:white;
+}
+@media only screen and (max-width: 768px){
+  .tituloVestimenta{
+    font-size:25px;
+  }
+  .vestimenta{
+    margin-bottom:20px;
+    font-size:23px;
+  }
+}
+
+
+/* css del component canciones */
+
+
+#canciones-Western{
+  padding-top:4%;
+  padding-right:4%;
+  padding-bottom:4%;
+  padding-left:4%;
+  background-color:white;
+}
+.botonhashtag{
+  font-family:Montserrat, sans-serif;
+  font-size:11px;
+  font-weight:600;
+  color:black;
+  background-color:rgb(231, 216, 203);
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  padding-top:15px;
+  padding-right:40px;
+  padding-bottom:12px;
+  padding-left:40px;
+  border-top-color:white;
+  border-right-color:white;
+  border-bottom-color:white;
+  border-left-color:white;
+}
+.inputEmail4{
+  font-family:Montserrat, sans-serif;
+  font-size:14px;
+  font-weight:500;
+  color:black;
+  background-color:rgb(231, 216, 203);
+  padding-top:15px;
+  padding-right:15px;
+  padding-bottom:15px;
+  padding-left:15px;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:solid;
+  border-left-style:solid;
+  border-top-width:0px;
+  border-right-width:0px;
+  border-bottom-width:0px;
+  border-left-width:0px;
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  height:50px;
+}
+.tituloCancion{
+  font-family:"Noto Serif Display";
+  font-size:35px;
+  font-style:italic;
+  font-weight:700;
+}
+.labelform.p-1{
+  font-weight:600;
+  font-family:Montserrat;
+}
+@media only screen and (max-width: 768px){
+  .tituloCancion{
+    font-size:25px;
+  }
+}
+@media (max-width: 480px){
+  .tituloCancion{
+    font-size:25px;
+  }
+  .labelform.p-1{
+    font-size:14px;
+  }
+}
+
+
+/* css del component eventos */ 
+
+.card{
+  height:550px;
+}
+.card-img-top{
+  height:250px !important;
+}
+.card-title{
+  color:rgb(0, 0, 0);
+  font-family:Montserrat, sans-serif;
+  font-size:18px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.botonhashtag{
+  font-family:Montserrat, sans-serif;
+  font-size:11px;
+  font-weight:600;
+  color:black;
+  background-color:rgb(231, 216, 203);
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  padding-top:15px;
+  padding-right:40px;
+  padding-bottom:12px;
+  padding-left:40px;
+  border-top-color:white;
+  border-right-color:white;
+  border-bottom-color:white;
+  border-left-color:white;
+  text-decoration-line:none !important;
+  text-decoration-thickness:initial !important;
+  text-decoration-style:initial !important;
+  text-decoration-color:initial !important;
+}
+.divhorario{
+  margin-top:0px;
+  margin-right:auto;
+  margin-left:auto;
+  background-color:rgb(245, 245, 245);
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-bottom-left-radius:100px;
+  width:180px;
+  margin-bottom:13px;
+}
+#eventos-Western{
+  padding-top:4%;
+  padding-right:1%;
+  padding-bottom:4%;
+  padding-left:1%;
+  background-color:rgb(215, 183, 162);
+}
+@media only screen and (max-width: 768px){
+  #eventos-Western{
+    padding-top:15%;
+    padding-right:10%;
+    padding-bottom:15%;
+    padding-left:10%;
+    background-color:rgb(215, 183, 162);
+  }
+}
+
+/* css del component galeria */ 
+
+#galeria-Western{
+  padding-top:4%;
+  padding-right:6%;
+  padding-bottom:4%;
+  padding-left:6%;
+  background-color:rgb(215, 183, 162);
+}
+.imgGaleria{
+  height:638px;
+  object-fit:cover;
+}
+.owl-carousel{
+  justify-content:center;
+  display:flex !important;
+}
+@media only screen and (max-width: 768px){
+  #galeria-Western{
+    padding-top:9%;
+    padding-right:8%;
+    padding-bottom:10%;
+    padding-left:9%;
+  }
+}
+
+/* css del component mensaje */
+
+#mensaje-Western{
+  width:100%;
+  height:200px;
+  background-image:url("https://eleve11.ar/wp-content/uploads/2022/09/jonathan-borba-PjFIGt4t9Cw-unsplash-scaled.jpg");
+  background-position-x:center;
+  background-position-y:center;
+  background-size:initial;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-origin:initial;
+  background-clip:initial;
+  background-color:initial;
+  box-shadow:rgba(7, 7, 7, 0.3) 0px 0px 0px 2000px inset;
+}
+.textodedicatoria{
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-family:"Noto Serif Display", sans-serif;
+  font-size:18px;
+  font-weight:500;
+  font-style:italic;
+}
+.divdedicatoria{
+  padding-top:50px;
+  padding-right:0px;
+  padding-bottom:50px;
+  padding-left:0px;
+}
+@media only screen and (max-width: 768px){
+  .textodedicatoria{
+    font-size:15px;
+  }
+}
+
+
+/* css del component footer */ 
+
+
+.couple-names{
+
+  text-align: center;
+  background-color:blue;
+  padding: 2% 2% 2% 2%;
+
+}

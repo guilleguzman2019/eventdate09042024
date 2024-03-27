@@ -1,0 +1,470 @@
+body {
+  font-family: "Montserrat Alternates", Sans-serif;
+}
+
+a{
+
+  text-decoration: none;
+}
+
+/* navbar */
+
+.navbar {
+  background: #00000000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* nav menu button */
+
+.menu-btn{
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbar .menu-btn__lines::before,
+.navbar .menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+
+.navbar .menu-btn__lines,
+.navbar .menu-btn__lines::before,
+.navbar .menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+
+.navbar .menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+
+.navbar .menu-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+
+h1 {
+  font-weight: 700;
+}
+
+
+
+
+/* Responsive style */
+
+@media screen and (max-width: 756px) {
+
+  .navbar {
+      padding: 10px 20px;
+  }
+
+  .overflow {
+      overflow: hidden;
+  }
+
+  .overlay {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 500;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .overlay--active {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .menu-btn {
+      display: flex;
+  }
+
+  .navbar .menu-items {
+      position: fixed;
+      height: 100%;
+      max-height: initial;
+      overflow-y: auto;
+      width: 80%;
+      top: 65px;
+      left: 0;
+      background: #7FC6BA;
+      display: block;
+      transform: translateX(-100vh);
+      transition: 0.3s ease-out;
+      padding-bottom: 100px;
+  }
+
+  .menu-items.open {
+      transform: translateY(0);
+      padding:17px;
+  }
+
+  
+}
+
+
+.main{
+
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://eventdate.es/wp-content/uploads/2022/09/FONDO-SI-ACEPTO.png);
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tituloHome{
+
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.btn-green {
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #7FC6BA;
+  border-radius: 10px 10px 10px 10px;
+  padding: 15px 20px 15px 20px;
+  margin: 4px;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+
+@media (max-width: 756px){
+.main {
+  padding-top: 50px
+}
+}
+
+@media (max-width: 756px){
+  .navbar {
+      background-color: black;
+      
+  }
+  }
+
+.nombreUser{
+
+  font-weight: 700;
+}
+
+
+/*  codigo nuevo   */
+body{
+
+    font-family: "Montserrat Alternates", Sans-serif;
+    font-weight: 700;
+  }
+  
+  .navbar{
+  
+    position: absolute !important;
+    width: 100% !important;
+  }
+  
+  a{
+    text-decoration: none !important;
+    color: white !important;
+  }
+  
+  .bg-image{
+  
+    background-image: url(https://eventdate.es/wp-content/uploads/2022/09/FONDO-SI-ACEPTO.png);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1% 4% 1% 4% !important;
+  }
+  
+  @media (max-width: 767px){
+  
+  .bg-image{
+  height: 90vh;
+  }
+  }
+  
+  
+  .bg-transparent{
+  
+    padding: 10px;
+  }
+  
+  .tituloheader{
+  
+    font-size: 50px !important;
+    font-weight: 700 !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Estilos a aplicar cuando la pantalla tiene un ancho máximo de 600px */
+    .tituloheader{
+      font-size: 40px !important;
+    }
+  
+    .col-titulo{
+  
+      align-items: center;
+    }
+  }
+  
+  
+  .btn-green{
+  
+    font-family: "Montserrat Alternates", Sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #7FC6BA;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 20px 15px 20px;
+    margin: 4px;
+  }
+  
+  .modelos{
+  
+    padding: 6% 17% 4% 17%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .modelos{
+  
+      padding: 15% 7% 10% 7%;
+    }
+  
+    .img-modelo{
+  
+      width: 100% !important;
+    }
+  
+    .btn-green{
+  
+      padding: 7px !important;
+    }
+  }
+  
+  .img-modelo{
+  
+    width: 99%;
+  }
+  
+  .curve-divider {
+    background-color: #f1f1f1;
+  }
+  
+  .elementor-shape-fill {
+    fill: #ffffff;
+  }
+  
+  .custom-section{
+  
+    padding: 0% 15% 4% 15%;
+  }
+  
+  .img-fluid{
+  
+    width: 80% !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .custom-section{
+  
+      padding: 7% 7% 9% 7%;
+    }
+  
+    .img-fluid{
+  
+      width: 70% !important;
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .question-section{
+  
+      padding: 14% 4% 4% 7% !important;
+    }
+  }
+  
+  .tituloSessiones{
+
+    font-size: 17px !important;
+  }
+
+  .price-section {
+    background-image: url('https://eventdate.es/wp-content/uploads/2022/10/asdsdadaxs.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5% 0;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    z-index: 1;
+    padding: 8% 10% 8% 10%;
+  }
+  
+  .divprecio{
+  
+    background-color: #7FC6BA; 
+    margin-top: 43px; 
+    margin-bottom: 0px; 
+    border-radius:30px; 
+    padding:70px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .divprecio{
+  
+      padding:40px !important;
+    }
+  
+    .price-section {
+  
+      padding: 14% 4% 25% 4%;
+  
+    }
+  }
+  
+  .tituloprecio{
+  
+    font-family: "Raleway", Sans-serif;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 4px;
+    color: white; 
+    margin-top: 144px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .tituloprecio{
+  
+      font-size: 45px;
+      margin-top: 25px;
+    }
+  
+    .lista{
+      margin-bottom: 17px !important; 
+    }
+  }
+  
+  ul {
+    list-style-type: disc; /* Establece el estilo de la lista como puntos */
+    color: white; /* Cambia el color de los puntos a blanco */
+  }
+  
+  .lista{
+    margin-bottom: 7px !important; /* Ajusta el valor según sea necesario */
+  }
+  
+  h5{
+  
+    font-size: 20px !important;
+  }
+  
+  .seccion_pasos{
+  
+    padding: 6% 10% 4% 10%;
+  }
+  
+  .img_pasos{
+  
+    width: 70% !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .seccion_pasos{
+  
+      padding: 17% 4% 14% 4%;
+    }
+  
+    .img_pasos{
+  
+      width: 50% !important;
+    }
+  
+    .paso{
+  
+      margin-bottom: 50px !important;
+    }
+  
+  }
+  
+  .iframefinal{
+  
+    position: absolute;
+      top: 34px;
+      left: 155px;
+      width: 40%;
+      height: 87%;
+      border-radius: 26px;
+  }
+
+  .footer {
+    background-image: linear-gradient(45deg, #FF6660 0%, #2D2CE5 100%);
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.tituloFooter {
+  color: #FFFFFF;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+  
